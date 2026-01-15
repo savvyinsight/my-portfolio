@@ -19,8 +19,13 @@ jobs:
           hugo-version: '0.123.7'
           extended: true
 
+      - name: Show repo files (debug)
+        run: |
+          echo "Working directory: $(pwd)"
+          echo "Listing files:" && ls -la
+
       - name: Build
-        run: hugo --minify
+        run: hugo --config hugo.toml --minify
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
