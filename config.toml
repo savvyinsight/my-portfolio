@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://savvyinsight.github.io/"
 languageCode = "en-us"
 title = "Prometheanist"
 theme = "cactus"
